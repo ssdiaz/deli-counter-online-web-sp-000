@@ -21,7 +21,7 @@ end
 # array = ["Logan", "Avi", "Spencer"]
 
 def take_a_number (katz_deli, new_customer)
-  katz_deli >> new_customer
+  katz_deli << new_customer
 
   array_with_index = katz_deli.each.with_index(1).map do |customer, number|
     puts "#{number}. #{customer}"
