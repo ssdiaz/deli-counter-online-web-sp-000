@@ -10,7 +10,7 @@ def line (array)
 #iterate
 
 
-  array.each_with_index.map do | customer, number|
-     "The line is currently: #{number+1}: #{customer}"
+array.each.with_index(1).map do |customer, number|
+        "The line is currently: #{number}: #{customer}"
   end
 end
