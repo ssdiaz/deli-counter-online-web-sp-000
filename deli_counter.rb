@@ -19,12 +19,16 @@ def line (array)
 end
 
 # array = ["Logan", "Avi", "Spencer"]
+#katz_deli = ["Logan", "Avi", "Spencer"]
+# new_customer = "sam"
 
 def take_a_number (katz_deli, new_customer)
   katz_deli << new_customer
 
-  array_with_index = katz_deli.each.with_index(1).map do |customer, number|
-    puts "#{number}. #{customer}"
+  array_with_index = katz_deli.each.with_index(1).map do |new_customer, number|
+      puts "#{number}. #{new_customer}"
   end
+
+  puts array_with_index[-1]
 
 end
