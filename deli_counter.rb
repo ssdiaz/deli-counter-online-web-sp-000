@@ -8,14 +8,23 @@ def line (array)
     puts "The line is currently empty."
   else
     # need to add the index no. to array elements
-    array_with_index = array.each.with_index(1).map do |customer, number|
+    new_array_numbered= array.each.with_index(1).map do |customer, number|
       "#{number}. #{customer}"
     end
     # string the array
-    string_line = array_with_index.join(" ")
+    string_line = new_array_numbered.join(" ")
     # put the phrase
     puts "The line is currently: #{string_line}"
   end
 end
 
 # array = ["Logan", "Avi", "Spencer"]
+
+def take_a_number (array, new_customer)
+  array >> new_customer
+
+  array_with_index = array.each.with_index(1).map do |customer, number|
+    puts "#{number}. #{customer}"
+  end
+
+end
