@@ -17,9 +17,9 @@ new_array = array.each.with_index(1).map do |customer, number|
         "#{number}: #{customer}"
   end
 # string the array
-new_array.join(",")
+string_line = new_array.join(",")
 # put the phrase
-puts "The line is currently: #{new_array}"
+puts "The line is currently: #{string_line}"
 
 end
 end
