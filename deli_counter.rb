@@ -24,13 +24,15 @@ end
 def take_a_number (katz_deli, new_customer)
   katz_deli << new_customer
   puts "Welcome, #{new_customer}. You are number #{katz_deli.length} in line."
+end
 
-#  array_with_index = katz_deli.each.with_index(1).map do |new_customer, number|
-#      puts "#{number}. #{new_customer}"
-#  end
+def now_serving (katz_deli)
 
-#new_array = array_with_index
-
-  #puts array_with_index[-1]
+    if katz_deli.length == 0
+      "There is nobody waiting to be served!"
+    else
+      puts "Currently serving #{katz_deli[0]}."
+      katz_deli.shift
+    end
 
 end
