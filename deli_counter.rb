@@ -11,15 +11,17 @@ def line (array)
 #array.each.with_index(1).map do |customer, number|
       #  "#{number}: #{customer}"
   #end
-  
+
 # need to add the index no
-array.each.with_index(1).map do |customer, number|
+new_array = array.each.with_index(1).map do |customer, number|
         "#{number}: #{customer}"
   end
 # string the array
-array.joins(",")
+new_array.join(",")
 # put the phrase
-puts "The line is currently: #{array}"
+puts "The line is currently: #{new_array}"
 
 end
 end
+
+# array = ["Logan", "Avi", "Spencer"]
