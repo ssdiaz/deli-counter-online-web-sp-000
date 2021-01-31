@@ -14,7 +14,7 @@ def line (array)
 
 # need to add the index no
 new_array = array.each.with_index(1).map do |customer, number|
-        "#{number}: #{customer}"
+        "#{number}. #{customer}"
   end
 # string the array
 string_line = new_array.join(", ")
