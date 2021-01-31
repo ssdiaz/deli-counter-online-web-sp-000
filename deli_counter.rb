@@ -1,6 +1,6 @@
 # Write your code here.
 
-katz_deli = []
+#katz_deli = []
 
 #shows everyone in current place in line
 def line (array)
@@ -20,10 +20,10 @@ end
 
 # array = ["Logan", "Avi", "Spencer"]
 
-def take_a_number (array, new_customer)
-  array >> new_customer
+def take_a_number (katz_deli, new_customer)
+  katz_deli >> new_customer
 
-  array_with_index = array.each.with_index(1).map do |customer, number|
+  array_with_index = katz_deli.each.with_index(1).map do |customer, number|
     puts "#{number}. #{customer}"
   end
 
