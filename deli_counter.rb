@@ -5,7 +5,7 @@ katz_deli = []
 #shows everyone in current place in line
 def line (array)
   if array.length == 0
-    return "The line is currently empty."
+    puts "The line is currently empty."
   else
     array.length
 
