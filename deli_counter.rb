@@ -7,8 +7,8 @@ def line (array)
   if array.length == 0
     puts "The line is currently empty."
   else
-    array.length
-
-
+#iterate 
+  array.each_with_index.map do | number, customer|
+     "The line is currently: #{number}: #{customer} "
   end
 end
