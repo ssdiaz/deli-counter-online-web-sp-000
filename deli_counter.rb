@@ -9,6 +9,6 @@ def line (array)
   else
 #iterate
   array.each_with_index.map do | number, customer|
-     "The line is currently: #{number}:#{customer} "
+     "The line is currently: #{number}:#{customer}"
   end
 end
