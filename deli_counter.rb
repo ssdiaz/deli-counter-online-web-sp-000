@@ -8,8 +8,18 @@ def line (array)
     puts "The line is currently empty."
   else
 #iterate
+#array.each.with_index(1).map do |customer, number|
+      #  "#{number}: #{customer}"
+  #end
+  
+# need to add the index no
 array.each.with_index(1).map do |customer, number|
-        "The line is currently: #{number}: #{customer}"
+        "#{number}: #{customer}"
   end
+# string the array
+array.joins(",")
+# put the phrase
+puts "The line is currently: #{array}"
+
 end
 end
